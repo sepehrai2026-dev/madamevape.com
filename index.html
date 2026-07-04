@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madame Vape — Best Vape Products Compared (2026)</title>
+<meta name="description" content="Compare the best vape products for 2026. Expert reviews of JUUL, Vuse, IQOS, Flum Float, and Elf Bar with detailed feature comparisons.">
+<meta name="keywords" content="best vape products, vape comparison, JUUL review, Vuse review, IQOS review, Elf Bar review, vaping guide">
+<meta property="og:title" content="Madame Vape — Best Vape Products Compared (2026)">
+<meta property="og:description" content="Compare the best vape products for 2026. Expert reviews of JUUL, Vuse, IQOS, Flum Float, and Elf Bar with detailed feature comparisons.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://madamevape.com">
+<link rel="canonical" href="https://madamevape.com">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #111111;
+  --text: #e8e8e8;
+  --text-muted: #888888;
+  --border: #222222;
+  --accent: var(--site-accent, #e8e8e8);
+  --accent-light: var(--site-accent-light, #333333);
+  --accent-dark: var(--site-accent-dark, #cccccc);
+  --max-w: 1080px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+/* --- Nav --- */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.85);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.nav-updated {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* --- Hero --- */
+
+.hero {
+  padding: 8rem 1.5rem 5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  max-width: 720px;
+  margin-bottom: 1rem;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+/* --- Content --- */
+
+.content {
+  padding-bottom: 2rem;
+}
+
+.section-wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Intro --- */
+
+.intro {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.intro-copy {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 640px;
+  line-height: 1.8;
+}
+
+/* --- Section Labels & Titles --- */
+
+.section-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+}
+
+/* --- Comparison / Cards --- */
+
+.comparison {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: #444;
+}
+
+.card-featured {
+  border-left: 3px solid var(--accent);
+}
+
+.card-icon {
+  display: none;
+}
+
+.card-header {
+  margin-bottom: 1.25rem;
+}
+
+.card-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}
+
+.card-tagline {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.card-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.card-features {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.card-features li {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 0.35rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.card-features li::before {
+  content: '\2014';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+}
+
+.card-pricing {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding-top: 1rem;
+  margin-bottom: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.card-pricing strong {
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.card-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 0.65rem 1.5rem;
+  border-radius: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  margin-top: auto;
+}
+
+.card-cta:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* --- Guide --- */
+
+.guide {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.guide-content {
+  color: var(--text-muted);
+  line-height: 1.8;
+  max-width: 640px;
+  font-size: 0.95rem;
+}
+
+.guide-content h3 {
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 2rem 0 0.75rem;
+}
+
+.guide-content h3:first-child {
+  margin-top: 0;
+}
+
+.guide-content p {
+  margin-bottom: 1rem;
+}
+
+/* --- FAQ --- */
+
+.faq {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.25rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  gap: 1rem;
+}
+
+.faq-q::after {
+  content: '+';
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.faq-q.open::after {
+  content: '\2212';
+}
+
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-a.open {
+  max-height: 600px;
+  padding-bottom: 1.25rem;
+}
+
+.faq-a p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  max-width: 640px;
+}
+
+/* --- Footer --- */
+
+.footer {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem 0 2rem;
+}
+
+.footer-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-disc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.footer-links a {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0 2rem;
+}
+
+.footer-bottom p {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 7rem 1.5rem 3.5rem;
+  }
+
+  .intro,
+  .comparison,
+  .guide,
+  .faq {
+    padding: 3.5rem 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Madame Vape</a>
+    <span class="nav-updated">Updated July 2026</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">Vaping, reviewed with clarity</h1>
+    <p class="hero-sub">Independent comparisons of the leading vape products — flavor options, battery life, design, and value so you can make an informed choice.</p>
+  </div>
+</header>
+
+<main class="content">
+  <section class="intro">
+    <div class="section-wrap">
+      <p class="intro-copy">The vape market is crowded, confusing, and full of conflicting information. Whether you're an experienced vaper or exploring alternatives to traditional cigarettes, choosing the right device matters. We've compared the leading vape products on design, flavor selection, nicotine delivery, battery life, and overall value.</p>
+    </div>
+  </section>
+
+  <section class="comparison" id="compare">
+    <div class="section-wrap">
+      <span class="section-label">Comparison</span>
+      <h2 class="section-title">Top vape products compared</h2>
+      <div class="cards">
+        <div class="card card-featured">
+  <span class="card-icon">🔋</span>
+  <div class="card-header">
+    <div class="card-name">JUUL</div>
+    <div class="card-tagline">Sleek pod system pioneer</div>
+  </div>
+  <p class="card-desc">JUUL popularized the modern pod vape with its slim, minimalist design and simple pod system. Known for consistent nicotine delivery and a draw-activated mechanism with no buttons to press.</p>
+  <ul class="card-features">
+    Ultra-slim, pocket-friendly design,Draw-activated (no buttons),Consistent nicotine salt delivery,Magnetic pod connection,USB-C charging
+  </ul>
+  <div class="card-pricing">Device: <strong>$9.99</strong> — Pods: <strong>$6.49/2-pack</strong></div>
+  <a href="#affiliate-juul" class="card-cta" target="_blank" rel="noopener nofollow">Shop JUUL</a>
+</div>
+<div class="card card-featured">
+  <span class="card-icon">🌬️</span>
+  <div class="card-header">
+    <div class="card-name">Vuse</div>
+    <div class="card-tagline">Reliable pod system by R.J. Reynolds</div>
+  </div>
+  <p class="card-desc">Vuse (formerly Vuse Alto) is backed by one of the largest tobacco companies, offering reliable devices and a wide range of flavor options. Strong battery life and consistent vapor production make it a popular daily driver.</p>
+  <ul class="card-features">
+    Long-lasting battery (up to 12 hours),Wide flavor selection,Pre-filled pod system,Backed by major tobacco company,Available in multiple nicotine strengths
+  </ul>
+  <div class="card-pricing">Device: <strong>$1.00</strong> (with pods) — Pods: <strong>$5.99/2-pack</strong></div>
+  <a href="#affiliate-vuse" class="card-cta" target="_blank" rel="noopener nofollow">Shop Vuse</a>
+</div>
+<div class="card">
+  <span class="card-icon">🔥</span>
+  <div class="card-header">
+    <div class="card-name">IQOS</div>
+    <div class="card-tagline">Heat-not-burn tobacco system</div>
+  </div>
+  <p class="card-desc">IQOS by Philip Morris heats real tobacco sticks (TEREA) instead of vaporizing liquid. It delivers a familiar tobacco experience without combustion, producing an aerosol rather than smoke. FDA-authorized as a modified risk tobacco product.</p>
+  <ul class="card-features">
+    Heats real tobacco (no combustion),FDA modified risk authorization,TEREA stick compatibility,No ash, less odor than cigarettes,Premium build quality
+  </ul>
+  <div class="card-pricing">Device: <strong>$49.00</strong> — TEREA sticks: <strong>$7.50/pack</strong></div>
+  <a href="#affiliate-iqos" class="card-cta" target="_blank" rel="noopener nofollow">Shop IQOS</a>
+</div>
+<div class="card">
+  <span class="card-icon">🍬</span>
+  <div class="card-header">
+    <div class="card-name">Flum Float</div>
+    <div class="card-tagline">High-puff disposable vape</div>
+  </div>
+  <p class="card-desc">The Flum Float is a popular disposable vape offering approximately 3,000 puffs per device. Known for bold, sweet flavor profiles and a smooth draw. Convenient for travel or as a backup device.</p>
+  <ul class="card-features">
+    Approximately 3,000 puffs per device,Bold fruit and dessert flavors,No charging or refilling needed,Compact and lightweight,5% nicotine salt
+  </ul>
+  <div class="card-pricing"><strong>$12.99</strong> per device</div>
+  <a href="#affiliate-flum-float" class="card-cta" target="_blank" rel="noopener nofollow">Shop Flum Float</a>
+</div>
+<div class="card">
+  <span class="card-icon">✨</span>
+  <div class="card-header">
+    <div class="card-name">Elf Bar</div>
+    <div class="card-tagline">Flavor-forward disposable vape</div>
+  </div>
+  <p class="card-desc">Elf Bar (now EBDESIGN in the US) is one of the world's most popular disposable vape brands, known for an enormous flavor range and smooth nicotine delivery. Their rechargeable disposable models offer high puff counts.</p>
+  <ul class="card-features">
+    Massive flavor selection (50+ options),Up to 5,000 puffs (rechargeable models),Smooth mesh coil technology,Rechargeable USB-C on select models,Ergonomic design
+  </ul>
+  <div class="card-pricing">From <strong>$10.99</strong> per device</div>
+  <a href="#affiliate-elf-bar" class="card-cta" target="_blank" rel="noopener nofollow">Shop Elf Bar</a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="guide" id="guide">
+    <div class="section-wrap">
+      <span class="section-label">Guide</span>
+      <h2 class="section-title">How to choose the right vape</h2>
+      <div class="guide-content"><h3>Pod systems vs. disposables</h3><p>Pod systems use refillable or replaceable pods and a rechargeable battery — lower long-term cost and less waste. Disposables are convenient (no charging, no refilling) but more expensive per puff and generate more waste. For regular use, pod systems are the better value.</p><h3>Nicotine salt vs. freebase</h3><p>Nicotine salt e-liquids deliver a smoother throat hit at higher nicotine concentrations, making them popular with people transitioning from cigarettes. Freebase nicotine provides a stronger throat hit at lower concentrations. Most pod systems use nicotine salts.</p><h3>Heat-not-burn devices</h3><p>Devices like IQOS heat real tobacco instead of vaporizing liquid. They're positioned between cigarettes and vapes — offering a more familiar tobacco taste with potentially reduced harmful compounds compared to combustion. However, they're not risk-free.</p><h3>Battery and portability</h3><p>Battery life matters if you vape throughout the day. Most pod systems last 8-12 hours on a charge. Consider size and pocket-friendliness too — the best device is one you'll actually carry with you.</p></div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="section-wrap">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list" id="faq-list"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-name">Madame Vape</span>
+        <p class="footer-disc">MadameVape.com provides independent comparisons of vape products. We may earn a commission through affiliate links at no extra cost to you. Vaping products contain nicotine, which is addictive. These products are intended for adult smokers and vapers only.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Madame Vape. Some links on this site are affiliate links. We may earn a commission if you make a purchase.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {"faqs":[{"q":"Is vaping safer than smoking?","a":"Public health authorities generally agree that vaping is less harmful than combustible cigarettes because it doesn't involve burning tobacco. However, vaping is not risk-free — it still delivers nicotine and other substances to your lungs. It's best viewed as a harm reduction tool for current smokers, not a safe habit to pick up."},{"q":"What's the difference between pod systems and disposables?","a":"Pod systems have a rechargeable battery and replaceable pods — lower cost per puff and less waste over time. Disposables are all-in-one devices you discard when empty — more convenient but pricier per puff and environmentally wasteful. For regular use, pod systems save money."},{"q":"How do I choose the right nicotine strength?","a":"If you're transitioning from a pack-a-day cigarette habit, start with 5% (50mg) nicotine salt. Lighter smokers may prefer 3% (30mg). If you experience dizziness or headaches, drop to a lower strength. Non-smokers should not start using nicotine products."},{"q":"What is heat-not-burn technology?","a":"Heat-not-burn devices like IQOS heat real tobacco to around 350C instead of burning it at 600C+. This produces an aerosol containing nicotine and tobacco flavor without the combustion byproducts (tar, carbon monoxide) found in cigarette smoke. The FDA has authorized IQOS as a modified risk tobacco product."},{"q":"How long do vape devices last?","a":"Pod system batteries typically last 8-12 hours of regular use and can be recharged hundreds of times. The device itself usually lasts 6-12 months before the battery degrades. Disposables last from 200 to 5,000 puffs depending on the model — roughly 1-7 days for a regular vaper."}],"accentColor":"#a855f7","accentLight":"#f3e8ff","accentDark":"#9333ea","ctaText":""};
+document.addEventListener('DOMContentLoaded', () => {
+  // Set accent color from config
+  if (SITE_CONFIG.accentColor) {
+    document.documentElement.style.setProperty('--site-accent', SITE_CONFIG.accentColor);
+  }
+  if (SITE_CONFIG.accentLight) {
+    document.documentElement.style.setProperty('--site-accent-light', SITE_CONFIG.accentLight);
+  }
+  if (SITE_CONFIG.accentDark) {
+    document.documentElement.style.setProperty('--site-accent-dark', SITE_CONFIG.accentDark);
+  }
+
+  // Build FAQ accordion
+  const faqList = document.getElementById('faq-list');
+  if (SITE_CONFIG.faqs && faqList) {
+    SITE_CONFIG.faqs.forEach(faq => {
+      const item = document.createElement('div');
+      item.className = 'faq-item';
+      item.innerHTML = `
+        <button class="faq-q">${faq.q}</button>
+        <div class="faq-a"><p>${faq.a}</p></div>
+      `;
+      const btn = item.querySelector('.faq-q');
+      const answer = item.querySelector('.faq-a');
+      btn.addEventListener('click', () => {
+        const isOpen = btn.classList.contains('open');
+        // Close all others
+        faqList.querySelectorAll('.faq-q.open').forEach(openBtn => {
+          openBtn.classList.remove('open');
+          openBtn.closest('.faq-item').querySelector('.faq-a').classList.remove('open');
+        });
+        // Toggle current
+        if (!isOpen) {
+          btn.classList.add('open');
+          answer.classList.add('open');
+        }
+      });
+      faqList.appendChild(item);
+    });
+  }
+});
+
+</script>
+</body>
+</html>
